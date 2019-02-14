@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img1 {
+    -webkit-transform: rotate(0deg);
+
+}
+
+.img2 {
+    -webkit-transform: rotate(180deg);
+
+}
+
+
+.img3 {
+    -webkit-transform: rotate(270deg);
+
+}
+
+.img4 {
+    -webkit-transform: rotate(450deg);
+
+}
+
+img{
+    padding-top: 150px;
+}
+
+
+.form_box{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-color: #2f3640;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+button{
+    background-color: orangered;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'BPG Algeti';
+
+}
