@@ -7,28 +7,39 @@
 <body>
 <?php
 
-$x = rand(1,4);
+$x = rand(1,6);
 
 $msg = '';
 if(isset($_POST['click'])){
 
     echo "<style>.ss{display: none;}</style>";
+    echo "<iframe src='sound/sound.mp3' allow='autoplay' style='display:none;'></iframe>";
 
     if($x == 1){
-        $msg = "<img class='img1' src='img/bootle.png' style='width: 150px;'>";
+        $msg = "<img  src='img/1.png' style='width: 50%;'>";
     }
 
     elseif($x == 2){
-        $msg = "<img class='img2' src='img/bootle.png' style='width: 150px;'>";
+        $msg = "<img  src='img/2.png' style='width: 50%;'>";
     }
 
     elseif($x == 3){
-        $msg = "<img class='img3' src='img/bootle.png' style='width: 150px;'>";
+        $msg = "<img  src='img/3.png' style='width: 50%;'>";
     }
 
     elseif($x == 4){
-        $msg = "<img class='img4' src='img/bootle.png' style='width: 150px;'>";
+        $msg = "<img  src='img/4.png' style='width: 50%;'>";
     }
+
+     elseif($x == 5){
+        $msg = "<img  src='img/5.png' style='width: 50%;'>";
+    }
+
+     elseif($x == 6){
+        $msg = "<img  src='img/6.png' style='width: 50%;'>";
+    }
+
+
 
 
 }
@@ -38,7 +49,7 @@ if(isset($_POST['click'])){
 <form method="post" action="index.php">
     <div class="form_box">
     <?php echo $msg;?>
-    <img class="ss" src="img/bootle.png" style='width: 150px;'>
+    <img class="ss" src="img/1.png" style='width: 50%;'>
     <br>
     <button name="click">დატრიალება</button>
     </div>
